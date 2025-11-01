@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page Sample - The Godfather Film Analysis</title>
+    <link rel="stylesheet" type="text/css" href="stylesmain.css">
+    <link rel="stylesheet" type="text/css" href="styleslayout.css">
+    <style type="text/css">
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('godfather_hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .featured-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .content-card {
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .content-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+			display:block;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>The Godfather: A Cinematic Masterpiece</h1>
+            <p>Exploring Francis Ford Coppola's Iconic Trilogy</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="films.html">Films</a></li>
+                <li><a href="characters.html">Characters</a></li>
+				<li><a href="media.html">Media</a></li>
+				<li><a href="info.html">Info</a></li>
+				<li><a href="validation.html">Validation</a></li>
+				<li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        
+        
+        <main>
+		
+        <div class="hero">
+            <div class="hero-content">
+                <h2>"I'm gonna make him an offer he can't refuse."</h2>
+                <p>Explore the world of the Corleone family and their legacy in American cinema</p>
+            </div>
+        </div>
+            <section id="featured">
+                <h2>Featured Content</h2>
+                <div class="featured-content">
+                    <article class="content-card">
+                        <div class="card-image" style="background-image: url('film1.jpg');"></div>
+                        <div class="card-content">
+                            <h3>The Godfather (1972)</h3>
+                            <p>Explore the first film in the trilogy that revolutionized cinema and established new standards for storytelling, character development, and visual narrative.</p>
+                            <a href="#The Godfather (1972)" class="btn">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <article class="content-card">
+                        <div class="card-image" style="background-image: url('Characters.jpg');"></div>
+                        <div class="card-content">
+                            <h3>Character Analysis</h3>
+                            <p>Dive deep into the complex characters of Vito Corleone, Michael Corleone, and other key figures in the Corleone family saga.</p>
+                            <a href="#Character Analysis" class="btn">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <article class="content-card">
+                        <div class="card-image" style="background-image: url('legacy.jpg');"></div>
+                        <div class="card-content">
+                            <h3>Cultural Impact</h3>
+                            <p>Discover how The Godfather influenced filmmaking, popular culture, and our understanding of power, family, and the American Dream.</p>
+                            <a href="#Cultural Impact" class="btn">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="The Godfather (1972)"><h3>The Godfather (1972)</h3><p>The Godfather (1972) is an epic gangster film about the Corleone, a powerful 
+			Italian-American crime family, and the transformation of the aging patriarch's youngest son, Michael, from a reluctant outsider to a ruthless mafia boss. 
+			The story begins as Don Vito Corleone transfers control of his empire, but an assassination attempt on him draws Michael into the violent world of organized crime, leading to cycles of revenge and betrayal. 
+			The film, directed by Francis Ford Coppola and based on Mario Puzo's novel, is a story of family, loyalty, power, and violence.</p></section>
+            <section id="Character Analysis"><h3>Character Analysis</h3><p>The main characters, Vito and Michael Corleone, represent different eras of the Mafia. Vito is an aging 
+			patriarch who is shrewd, intelligent, and driven by a traditional sense of honor and justice, masking a cold rage with a genial appearance. Michael is a complex, tragic figure 
+			who transforms from an idealistic war hero into a ruthless and morally ambiguous leader, sacrificing his soul to protect his family and burdened by the power he inherits</p></section>
+            <section id="Cultural Impact"><h3>Cultural Impact</h3><p>The Godfather's cultural impact includes reshaping how 
+			Italian-Americans are portrayed in media, making the gangster genre more complex by blending it with family drama, and embedding countless phrases into popular culture. 
+			The film is widely studied for its storytelling and ethical complexity and is often cited as a landmark achievement in American cinema.</p></section>
+            
+        </main>
+        
+        
+            <footer>
+            <p>&copy; 2025 The Godfather Film Analysis | Created by Murat Atilgan - Web Development - UWS Student Project</p>
+			<p>Images used for educational analysis purposes under fair use guidelines.</p>
+        </footer>
+        </footer>
+    </div>
+</body>
+</html>

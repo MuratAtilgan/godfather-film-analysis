@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - The Godfather Film Analysis</title>
+    <link rel="stylesheet" type="text/css" href="stylesmain.css">
+    <link rel="stylesheet" type="text/css" href="styleslayout.css">
+</head>
+<body>
+<div id="container">
+
+    <header>
+        <h1>Contact Us</h1>
+        <p>We’d love to hear your feedback on The Godfather Film Analysis website</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="info.html">Info</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="validation.html">Validation</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Feedback Form</h2>
+            <h5>Please complete the form below to share your thoughts or suggestions about this project.</h5>
+
+            <form id="contactForm" onsubmit="return validateForm()" style="max-width:700px; margin:0 auto; background:#f8f8f8; padding:30px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;">
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;">
+
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="Male"> <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female"> <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other"> <label for="other">Other</label>
+                <br><br>
+
+                <label for="film">Favourite Film in the Trilogy:</label><br>
+                <select id="film" name="film" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px;">
+                    <option value="">-- Select Film --</option>
+                    <option value="The Godfather (1972)">The Godfather (1972)</option>
+                    <option value="The Godfather Part II (1974)">The Godfather Part II (1974)</option>
+                    <option value="The Godfather Part III (1990)">The Godfather Part III (1990)</option>
+                </select>
+
+                <label>Overall Rating (1 = Poor, 5 = Excellent):</label><br>
+                <div style="margin:10px 0;">
+                    <input type="radio" name="rating" value="1"> 1
+                    <input type="radio" name="rating" value="2"> 2
+                    <input type="radio" name="rating" value="3"> 3
+                    <input type="radio" name="rating" value="4"> 4
+                    <input type="radio" name="rating" value="5"> 5
+                </div>
+
+                <label for="comments">Comments / Suggestions:</label><br>
+                <textarea id="comments" name="comments" placeholder="Write your feedback here..." required style="width:100%; padding:10px; height:120px; border:1px solid #ccc; border-radius:5px;"></textarea>
+
+                <div style="margin-top:20px; text-align:center;">
+                    <input type="submit" value="Submit Feedback" class="btn" style="margin-right:10px;">
+                    <input type="reset" value="Clear Form" class="btn">
+                </div>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Godfather Film Analysis | Created by Murat Atilgan - Web Development - UWS Student Project</p>
+        <p>Images used for educational analysis purposes under fair use guidelines.</p>
+    </footer>
+</div>
+
+<script type="text/javascript">
+function validateForm() {
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const film = document.getElementById('film').value;
+
+    if (name === "" || email === "" || film === "") {
+        alert("Please complete all required fields before submitting.");
+        return false;
+    } else {
+        alert("Thank you, " + name + "! Your feedback has been successfully submitted.");
+        return true;
+    }
+}
+</script>
+
+</body>
+</html>
