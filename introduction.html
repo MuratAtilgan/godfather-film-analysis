@@ -9,7 +9,8 @@
 </head>
 <body>
 <div id="container">
-    
+
+           
         <header>
             <h1>Introduction</h1>
             <p>Purpose and Target Audience</p>
@@ -19,7 +20,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="introduction.html">Introduction</a></li>
-                <li><a href="design.html">Design</a></li>
+                <li><a href="godfather_ai.html">GodFatherAI</a></li>
                 <li><a href="films.html">Films</a></li>
                 <li><a href="characters.html">Characters</a></li>
 				<li><a href="media.html">Media</a></li>
@@ -31,6 +32,7 @@
         
         <main>
             <article>
+			
                 <section id="purpose">
                     <h2>Purpose of the Website</h2>
                     <p>This website provides information about The Godfather film trilogy 
@@ -100,6 +102,7 @@
         
         <main>
             <article>
+			
                 <section id="purpose">
                     <h2>Purpose of the Website</h2>
                     <p>This website provides information about The Godfather film trilogy 
@@ -153,7 +156,39 @@
             <p>&copy; 2025 The Godfather Film Analysis | Created by Murat Atilgan - Web Development - UWS Student Project</p>
             <p>Images used for educational analysis purposes under fair use guidelines.</p>
         </footer>
+		<section id="godfather-ai">
+  <div class="ai-container">
+    <h2>The Godfather AI</h2>
+    <p>Ask anything about The Godfather trilogy — characters, symbolism, or Coppola’s cinematic genius.</p>
+    <div class="ai-frame">
+      <iframe
+        src="https://muratatilgan-godfather.hf.space"
+        frameborder="0"
+        title="Godfather AI Chatbot">
+      </iframe>
+    </div>
+  </div>
+</section>
+
 		</div>
-    
+		<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("show-ai-button");
+  const ai  = document.getElementById("godfather-ai");
+  if (!btn || !ai) return;
+
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    ai.style.display = "block";
+    ai.scrollIntoView({ behavior: "smooth" });
+  });
+});
+</script>
+
+
+
+		
+
+		    
 </body>
 </html>
