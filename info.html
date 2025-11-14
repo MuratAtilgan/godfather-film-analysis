@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +6,12 @@
 <title>Info - The Godfather Film Analysis</title>
 <link rel="stylesheet" href="stylesmain.css">
 <link rel="stylesheet" href="styleslayout.css">
+<style>
+  table td, table th {
+    padding: 6px;
+    border: 1px solid black;
+  }
+</style>
 </head>
 <body>
 <div id="container">
@@ -26,16 +31,16 @@
     <li><a href="media.html">Media</a></li>
     <li><a href="info.html">Info</a></li>
     <li><a href="validation.html">Validation</a></li>
-	<li><a href="contact.html">Contact</a></li>
-    
+    <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
 
 <main>
-  <h4>1. Website Summary</h4>
+
+<h4>1. Website Summary</h4>
   <p>This website explores <strong>The Godfather trilogy</strong> and was built using
   <strong>HTML5, CSS3 and JavaScript</strong> in Visual Studio Code.  
-  It includes seven pages covering introduction, design, films, characters, media, contact form and this documentation.</p>
+  It includes nine pages covering introduction, films, characters, media, contact form, AI chatbot, validation and this documentation.</p>
 
   <h4>2. Accessibility</h4>
   <ul>
@@ -50,64 +55,102 @@
     <li>All media from trusted sources (official trailers / local files).</li>
     <li>Validation JavaScript prevents empty form submissions.</li>
   </ul>
-<h4>4. Information Table </h4>
-<table border="1" cellpadding="6" style="border-collapse:collapse; width:100%; text-align:center;">
-  <tr>
-    <th style="text-align:left;">Page</th>
-    <th>External CSS</th>
-    <th>Internal CSS (&lt;style&gt;)</th>
-    <th>Inline Styles</th>
-    <th>Table</th>
-    <th>List</th>
-    <th>Form</th>
-    <th>Video</th>
-    <th>Audio</th>
-    <th>Images</th>
-    <th>JavaScript</th>
-  </tr>
+  <h4>4.Information Table</h4>
+  <table style="border: 1px solid black; border-collapse:collapse; width:100%; text-align:center;">
+    <tr>
+      <th style="text-align:left;">Page</th>
+      <th>External CSS</th>
+      <th>Internal CSS (&lt;style&gt;)</th>
+      <th>Inline Styles</th>
+      <th>Table</th>
+      <th>List</th>
+      <th>Form</th>
+      <th>Video</th>
+      <th>Audio</th>
+      <th>Images</th>
+      <th>JavaScript</th>
+    </tr>
 
-  <tr>
-    <td style="text-align:left;"><strong>index.html</strong></td>
-    <td>✓</td><td>—</td><td>—</td><td>—</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
-  </tr>
+    <tr>
+      <td style="text-align:left;"><strong>index.html</strong></td>
+      <td>✓</td><td>—</td><td>—</td><td>—</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    </tr>
 
-  <tr>
-    <td style="text-align:left;"><strong>introduction.html</strong></td>
-    <td>✓</td><td>—</td><td>—</td><td>—</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
-  </tr>
+    <tr>
+      <td style="text-align:left;"><strong>introduction.html</strong></td>
+      <td>✓</td><td>✓</td><td>—</td><td>—</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✓</td>
+    </tr>
 
-  <tr>
-    <td style="text-align:left;"><strong>design.html</strong></td>
-    <td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
-  </tr>
+    <tr>
+      <td style="text-align:left;"><strong>godfather_ai.html</strong></td>
+      <td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✓</td>
+    </tr>
 
-  <tr>
-    <td style="text-align:left;"><strong>films.html</strong></td>
-    <td>✓</td><td>✓</td><td>—</td><td>✓</td><td>—</td><td>—</td><td>✓</td><td>—</td><td>✓</td><td>—</td>
-  </tr>
+    <tr>
+      <td style="text-align:left;"><strong>films.html</strong></td>
+      <td>✓</td><td>✓</td><td>—</td><td>✓</td><td>—</td><td>—</td><td>✓</td><td>—</td><td>✓</td><td>—</td>
+    </tr>
 
-  <tr>
-    <td style="text-align:left;"><strong>characters.html</strong></td>
-    <td>✓</td><td>✓</td><td>—</td><td>—</td><td>✓</td><td>—</td><td>—</td><td>✓</td><td>✓</td><td>—</td>
-  </tr>
+    <tr>
+      <td style="text-align:left;"><strong>characters.html</strong></td>
+      <td>✓</td><td>✓</td><td>—</td><td>—</td><td>✓</td><td>—</td><td>—</td><td>✓</td><td>✓</td><td>—</td>
+    </tr>
 
-  <tr>
-    <td style="text-align:left;"><strong>media.html</strong></td>
-    <td>✓</td><td>✓</td><td>✓ (bg-image attrs)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✓</td><td>—</td>
-  </tr>
+    <tr>
+      <td style="text-align:left;"><strong>media.html</strong></td>
+      <td>✓</td><td>✓</td><td>✓ (bg-image attrs)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✓</td><td>—</td>
+    </tr>
 
-  <tr>
-    <td style="text-align:left;"><strong>contact.html</strong></td>
-    <td>✓</td><td>—</td><td>✓</td><td>—</td><td>—</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>✓</td>
-  </tr>
+    <tr>
+      <td style="text-align:left;"><strong>contact.html</strong></td>
+      <td>✓</td><td>—</td><td>✓</td><td>—</td><td>—</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>✓</td>
+    </tr>
 
-  <tr>
-    <td style="text-align:left;"><strong>info.html</strong></td>
-    <td>✓</td><td>—</td><td>—</td><td>✓ (this table)</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
-  </tr>
-</table>
+    <tr>
+      <td style="text-align:left;"><strong>validation.html</strong></td>
+      <td>✓</td><td>✓</td><td>—</td><td>—</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>✓</td><td>—</td>
+    </tr>
 
+    <tr>
+      <td style="text-align:left;"><strong>info.html</strong></td>
+      <td>✓</td><td>✓</td><td>—</td><td>✓ (this table)</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✓</td>
+    </tr>
+  </table>
 
+  <h4>5.Page Features Summary</h4>
+  <script>
+    // Define arrays for each page and their features
+    var pageFiles = ["index.html", "introduction.html", "godfather_ai.html", "films.html", "characters.html", "media.html", "contact.html", "validation.html", "info.html"];
+    
+    // Features arrays for each page
+    var externalCSS = [true, true, true, true, true, true, true, true, true];
+    var internalCSS = [false, true, true, true, true, true, false, true, true];
+    var inlineStyles = [false, false, false, false, true, true, true, false, false];
+    var table = [false, false, false, true, false, false, false, false, true];
+    var list = [true, true, false, false, true, false, false, true, true];
+    var form = [false, false, false, false, false, false, true, false, false];
+    var video = [false, false, false, true, false, false, false, false, false];
+    var audio = [false, false, false, false, true, false, false, false, false];
+    var images = [false, false, false, true, true, true, false, true, false];
+    var javascript = [false, true, true, false, false, false, true, false, true];
+    
+    // Display page features 
+    for (var i = 0; i < pageFiles.length; i++) {
+      var features = [];
+      if (externalCSS[i]) features.push("external CSS");
+      if (internalCSS[i]) features.push("internal CSS");
+      if (inlineStyles[i]) features.push("inline styles");
+      if (table[i]) features.push("table");
+      if (list[i]) features.push("list");
+      if (form[i]) features.push("form");
+      if (video[i]) features.push("video");
+      if (audio[i]) features.push("audio");
+      if (images[i]) features.push("images");
+      if (javascript[i]) features.push("javascript");
+      
+      document.write("<p>" + pageFiles[i] + " = " + features.join(", ") + "</p>");
+    }
+  </script>
 </main>
 
 <footer>
@@ -118,4 +161,3 @@
 </div>
 </body>
 </html>
-

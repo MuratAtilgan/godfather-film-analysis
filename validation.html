@@ -3,35 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Godfather Film Analysis - Home</title>
-	<link rel="stylesheet" type="text/css" href="stylesmain.css">
+    <title>Validation - The Godfather Film Analysis</title>
+    <link rel="stylesheet" type="text/css" href="stylesmain.css">
     <link rel="stylesheet" type="text/css" href="styleslayout.css">
-	<style text="text/css">
-	.hero-val {
-            background:  url('validation.png');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            margin-bottom: 2rem;
+    <style>
+        .validation-container {
+            margin: 2rem 0;
         }
         
-        .hero-content-val {
-            max-width: 800px;
-            padding: 2rem;
+        .validation-item {
+            margin-bottom: 2rem;
+            background-color: #f8f8f8;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .validation-item h3 {
+            margin-top: 0;
+            color: #8B0000;
+        }
+        
+        .validation-screenshot {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 1rem 0;
+            display: block;
+        }
+        
+        .validation-description {
+            margin-bottom: 1rem;
+            font-style: italic;
         }
     </style>
 </head>
 <body>
     <div id="container">
-	
         <header>
-            <h1>VALIDATION SERVICESS</h1>
-            
+            <h1>Validation Services</h1>
+            <p>HTML and CSS Validation Results</p>
         </header>
         
         <nav>
@@ -41,20 +54,35 @@
                 <li><a href="godfather_ai.html">GodFatherAI</a></li>
                 <li><a href="films.html">Films</a></li>
                 <li><a href="characters.html">Characters</a></li>
-				<li><a href="media.html">Media</a></li>
-				<li><a href="info.html">Info</a></li>
-				<li><a href="validation.html">Validation</a></li>
-				<li><a href="contact.html">Contact</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="validation.html">Validation</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         
         <main>
-		<div class="hero-val">
-            <div class="hero-content-val">
-               
+            <div class="validation-container">
+                <div class="validation-item">
+                    <h3>CSS Validation</h3>
+                    <p class="validation-description">Validation results for the external CSS file-styleslayout.css</p>
+                    <img src="val_css.png" alt="CSS Validation Results" class="validation-screenshot">
+                </div>
+                
+                <div class="validation-item">
+                    <h3>HTML Validation - Page 1</h3>
+                    <p class="validation-description">Validation results for films.html</p>
+                    <img src="val_html1.png" alt="HTML Validation Results - Page 1" class="validation-screenshot">
+                </div>
+                
+                <div class="validation-item">
+                    <h3>HTML Validation - Page 2</h3>
+                    <p class="validation-description">Validation results for characters.html</p>
+                    <img src="val_html2.png" alt="HTML Validation Results - Page 2" class="validation-screenshot">
+                </div>
             </div>
-        </div>
-		<section id="external-resources">
+            
+            <section id="external-resources">
                 <h3>Resources for Validators</h3>
                 <ul>
                     <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a></li>
@@ -65,7 +93,7 @@
         
         <footer>
             <p>&copy; 2025 The Godfather Film Analysis | Created by Murat Atilgan - Web Development - UWS Student Project</p>
-			<p>Images used for educational analysis purposes under fair use guidelines.</p>
+            <p>Images used for educational analysis purposes under fair use guidelines.</p>
         </footer>
     </div>
 </body>

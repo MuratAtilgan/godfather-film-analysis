@@ -315,7 +315,7 @@ article {
     color: white;
 }
 
-::-moz-selection {
+::selection {    /* ::-moz-selection removed */
     background-color: #D4AF37;
     color: white;
 }

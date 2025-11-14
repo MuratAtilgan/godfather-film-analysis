@@ -4,78 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction - The Godfather Film Analysis</title>
-	 <link rel="stylesheet" type="text/css" href="stylesmain.css">
+    <link rel="stylesheet" type="text/css" href="stylesmain.css">
     <link rel="stylesheet" type="text/css" href="styleslayout.css">
+    <style>
+        .date-time-container {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .date-time-display {
+            font-size: 18px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .date-time-buttons {
+            margin-top: 15px;
+        }
+        .date-time-buttons button {
+            margin: 0 5px;
+            padding: 8px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .date-time-buttons button:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
 <div id="container">
-
-           
-        <header>
-            <h1>Introduction</h1>
-            <p>Purpose and Target Audience</p>
-        </header>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="introduction.html">Introduction</a></li>
-                <li><a href="godfather_ai.html">GodFatherAI</a></li>
-                <li><a href="films.html">Films</a></li>
-                <li><a href="characters.html">Characters</a></li>
-				<li><a href="media.html">Media</a></li>
-				<li><a href="info.html">Info</a></li>
-				<li><a href="validation.html">Validation</a></li>
-				<li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <main>
-            <article>
-			
-                <section id="purpose">
-                    <h2>Purpose of the Website</h2>
-                    <p>This website provides information about The Godfather film trilogy 
-                    directed by Francis Ford Coppola. The trilogy is widely considered one 
-                    of the most influential film series in cinema history.</p>
-                    
-                    <p>The website covers:</p>
-                    <ul>
-                        <li>Overview of each film in the trilogy</li>
-                        <li>Character development and key themes</li>
-                        <li>Historical context and cultural impact</li>
-                        <li>Why these films remain influential</li>
-                    </ul>
-                    
-                    <p>This is a student project demonstrating the HTML , CSS and JavaScript  skills 
-                    learned in my web development course.</p>
-                </section>
+    <header>
+        <h1>Introduction</h1>
+        <p>Purpose and Target Audience</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="godfather_ai.html">GodFatherAI</a></li>
+            <li><a href="films.html">Films</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="info.html">Info</a></li>
+            <li><a href="validation.html">Validation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <article>
+            <section id="purpose">
+                <h2>Purpose of the Website</h2>
+                <p>This website provides information about The Godfather film trilogy 
+                directed by Francis Ford Coppola. The trilogy is widely considered one 
+                of the most influential film series in cinema history.</p>
                 
-                <section id="audience">
-                    <h2>Target Audience</h2>
-                    <p>This website is designed for:</p>
-                    <ul>
-                        <li><strong>Film students</strong> studying cinema and film history</li>
-                        <li><strong>Godfather trilogy fans</strong> seeking more information about the films</li>
-                        <li><strong>Film enthusiasts</strong> interested in classic cinema</li>
-                        <li><strong>Students researching</strong> mafia representation in media</li>
-                        <li><strong>General audiences</strong> wanting to understand the films' significance</li>
-                    </ul>
-                    
-                    <p>The content is written to be accessible for both casual viewers and 
-                    those with more serious interest in film analysis.</p>
-                </section>
-                <hr>
+                <p>The website covers:</p>
+                <ul>
+                    <li>Overview of each film in the trilogy</li>
+                    <li>Character development and key themes</li>
+                    <li>Historical context and cultural impact</li>
+                    <li>Why these films remain influential</li>
+                </ul>
                 
-                <h3>View HTML Source Code</h3>
-                <textarea rows="25" cols="120">
+                <p>This is a student project demonstrating the HTML , CSS and JavaScript  skills 
+                learned in my web development course.</p>
+            </section>
+            
+            <section id="audience">
+                <h2>Target Audience</h2>
+                <p>This website is designed for:</p>
+                <ul>
+                    <li><strong>Film students</strong> studying cinema and film history</li>
+                    <li><strong>Godfather trilogy fans</strong> seeking more information about the films</li>
+                    <li><strong>Film enthusiasts</strong> interested in classic cinema</li>
+                    <li><strong>Students researching</strong> mafia representation in media</li>
+                    <li><strong>General audiences</strong> wanting to understand the films' significance</li>
+                </ul>
+                
+                <p>The content is written to be accessible for both casual viewers and 
+                those with more serious interest in film analysis.</p>
+            </section>
+            
+            <!-- Date and Time Section -->
+            <section id="date-time" class="date-time-container">
+                <h2>Current Date and Time</h2>
+                <div id="date-display" class="date-time-display">Loading date...</div>
+                <div id="time-display" class="date-time-display">Loading time...</div>
+                <div class="date-time-buttons">
+                    <button onclick="showFullDate()">Full Date</button>
+                    <button onclick="showWeekday()">Weekday</button>
+                    <button onclick="showYear()">Year</button>
+                    <button onclick="showTime()">Time</button>
+                    <button onclick="updateDateTime()">Refresh</button>
+                </div>
+            </section>
+            
+            <hr>
+            
+            <h3>View HTML Source Code</h3>
+            <textarea rows="25" cols="120">
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction - The Godfather Film Analysis</title>
-	 <link rel="stylesheet" type="text/css" href="stylesmain.css">
+    <link rel="stylesheet" type="text/css" href="stylesmain.css">
     <link rel="stylesheet" type="text/css" href="styleslayout.css">
 </head>
 <body>
@@ -93,16 +135,16 @@
                 <li><a href="design.html">Design</a></li>
                 <li><a href="films.html">Films</a></li>
                 <li><a href="characters.html">Characters</a></li>
-				<li><a href="media.html">Media</a></li>
-				<li><a href="info.html">Info</a></li>
-				<li><a href="screendump.html">Screenshots</a></li>
-				<li><a href="contact.html">Contact</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="screendump.html">Screenshots</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         
         <main>
             <article>
-			
+            
                 <section id="purpose">
                     <h2>Purpose of the Website</h2>
                     <p>This website provides information about The Godfather film trilogy 
@@ -135,7 +177,7 @@
                     <p>The content is written to be accessible for both casual viewers and 
                     those with more serious interest in film analysis.</p>
                 </section>
-				       
+                    
             </article>
         </main>
         
@@ -143,52 +185,102 @@
             <p>&copy; 2025 The Godfather Film Analysis | Created by Murat Atilgan - Web Development - UWS Student Project</p>
             <p>Images used for educational analysis purposes under fair use guidelines.</p>
         </footer>
-		</div>
+        </div>
     
 </body>
 </html>
               </textarea>
           
-            </article>
-        </main>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 The Godfather Film Analysis | Created by Murat Atilgan - Web Development - UWS Student Project</p>
+        <p>Images used for educational analysis purposes under fair use guidelines.</p>
+    </footer>
+</div>
+
+<script>
+    // Array for weekdays as shown in study notes
+    var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    
+    // Display current date and time when page loads
+    window.onload = function() {
+        updateDateTime();
+    }
+    
+    // Update both date and time displays
+    function updateDateTime() {
+        var d = new Date();
         
-        <footer>
-            <p>&copy; 2025 The Godfather Film Analysis | Created by Murat Atilgan - Web Development - UWS Student Project</p>
-            <p>Images used for educational analysis purposes under fair use guidelines.</p>
-        </footer>
-		<section id="godfather-ai">
-  <div class="ai-container">
-    <h2>The Godfather AI</h2>
-    <p>Ask anything about The Godfather trilogy — characters, symbolism, or Coppola’s cinematic genius.</p>
-    <div class="ai-frame">
-      <iframe
-        src="https://muratatilgan-godfather.hf.space"
-        frameborder="0"
-        title="Godfather AI Chatbot">
-      </iframe>
-    </div>
-  </div>
-</section>
-
-		</div>
-		<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.getElementById("show-ai-button");
-  const ai  = document.getElementById("godfather-ai");
-  if (!btn || !ai) return;
-
-  btn.addEventListener("click", function (e) {
-    e.preventDefault();
-    ai.style.display = "block";
-    ai.scrollIntoView({ behavior: "smooth" });
-  });
-});
+        // Format date as Day, Month DD, YYYY
+        var dateStr = weekdays[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+        document.getElementById("date-display").innerHTML = dateStr;
+        
+        // Format time as HH:MM:SS
+        var hours = d.getHours();
+        var minutes = d.getMinutes();
+        var seconds = d.getSeconds();
+        
+        // Add leading zeros if needed
+        if (hours < 10) hours = "0" + hours;
+        if (minutes < 10) minutes = "0" + minutes;
+        if (seconds < 10) seconds = "0" + seconds;
+        
+        var timeStr = hours + ":" + minutes + ":" + seconds;
+        document.getElementById("time-display").innerHTML = timeStr;
+    }
+    
+    // Show full date
+    function showFullDate() {
+        var d = new Date();
+        var dateStr = weekdays[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+        document.getElementById("date-display").innerHTML = dateStr;
+    }
+    
+    // Show weekday only
+    function showWeekday() {
+        var d = new Date();
+        document.getElementById("date-display").innerHTML = "Today is: " + weekdays[d.getDay()];
+    }
+    
+    // Show year only
+    function showYear() {
+        var d = new Date();
+        document.getElementById("date-display").innerHTML = "Current Year: " + d.getFullYear();
+    }
+    
+    // Show time only
+    function showTime() {
+        var d = new Date();
+        var hours = d.getHours();
+        var minutes = d.getMinutes();
+        var seconds = d.getSeconds();
+        
+        // Add leading zeros if needed
+        if (hours < 10) hours = "0" + hours;
+        if (minutes < 10) minutes = "0" + minutes;
+        if (seconds < 10) seconds = "0" + seconds;
+        
+        document.getElementById("time-display").innerHTML = "Current Time: " + hours + ":" + minutes + ":" + seconds;
+    }
+    
+    // Update time every second
+    setInterval(function() {
+        var d = new Date();
+        var hours = d.getHours();
+        var minutes = d.getMinutes();
+        var seconds = d.getSeconds();
+        
+        // Add leading zeros if needed
+        if (hours < 10) hours = "0" + hours;
+        if (minutes < 10) minutes = "0" + minutes;
+        if (seconds < 10) seconds = "0" + seconds;
+        
+        document.getElementById("time-display").innerHTML = hours + ":" + minutes + ":" + seconds;
+    }, 1000);
 </script>
 
-
-
-		
-
-		    
 </body>
 </html>
